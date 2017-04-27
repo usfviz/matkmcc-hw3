@@ -1,14 +1,5 @@
-rm(list=ls())
-cat('\014')
 
-facebook <- read.csv('./Facebook_metrics/dataset_Facebook.csv', sep = ';', stringsAsFactors = F)
 diabetes <- read.csv('./dataset_diabetes/diabetic_data.csv', stringsAsFactors = F)
-
-head(facebook)
-# Facebook synopsis - 
-# This breaks down the facebook post into likes and various metrics to infer popularity
-head(diabetes)
-# Mostly binary data. - with many missing values 
 
 
 # bubble plot
