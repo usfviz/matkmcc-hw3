@@ -1,3 +1,10 @@
+library(ggplot2)
+library(shiny)
+library(ggvis)
+library(plotly)
+library(tidyr)
+library(dplyr)
+library(reshape2)
 
 diabetes <- read.csv('./dataset_diabetes/diabetic_data.csv', stringsAsFactors = F)
 
