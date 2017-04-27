@@ -52,6 +52,7 @@ shinyUI(
           "input.currentTab == 'Parallel Coordinate'",
           # do a conditional thing here
           titlePanel('Select More than 1 Coordinate'),
+          h4('be sure to click the axis...'),
           sliderInput('sampleSize', 
                       label = 'Select the Size of the Sample', 
                       min = 0, 
