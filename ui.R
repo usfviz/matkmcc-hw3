@@ -18,6 +18,7 @@ shinyUI(
         conditionalPanel(
           "input.currentTab == 'Small Multiples Plot'",
             # do a conditional thing here
+            titlePanel('Glipizide or Examide'),
             sliderInput('lengthOfStay', 
                         label = 'Select Length of stay', 
                         min = 1, 
@@ -33,6 +34,7 @@ shinyUI(
         conditionalPanel(
           "input.currentTab == 'Bubble Plot'",
           # do a conditional thing here
+          titlePanel('Enjoy the Bubbles'),
           selectInput('michealBuble', 'Select Fill Variable',
                       choices = c('readmitted', 'age')), 
           selectInput('y', 'Select Vertical Axis', 
@@ -49,6 +51,7 @@ shinyUI(
         conditionalPanel(
           "input.currentTab == 'Parallel Coordinate'",
           # do a conditional thing here
+          titlePanel('Select More than 1 Coordinate'),
           sliderInput('sampleSize', 
                       label = 'Select the Size of the Sample', 
                       min = 0, 
